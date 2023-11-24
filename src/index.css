@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: url("./assets/tractor.jpg") no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+}
+
+.grad.active{
+    background: linear-gradient(to right top, #13074e, #0f0f51, #0c1553,
+     #0a1b55, #0a2056, #0e2056, #112056, #142056, #1a1b54, #201551, #260d4e, #2b034a);
+    
+     
+} 
+
+
+
+.grad {
+    background:rgb(0, 0, 0, .1) ;
+    transition: all 1s ease;
+    
+}
+
+.scroll{
+    background: linear-gradient(to right top, #13074e, #0f0f51, #0c1553,
+    #0a1b55, #0a2056, #0e2056, #112056, #142056, #1a1b54, #201551, #260d4e, #2b034a);
+}
+
+
+@layer base {
+    :root {
+      height: 100%;
+      --color-primary: hsl(281.853, 100%, 68%);
+    }
+  
+    /* These heights are only there so the example can be centered vertically. */
+    body, #root {
+      height: 100%;
+    }
+  }
